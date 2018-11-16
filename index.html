@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#100harikoding</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="">
+		<div class=""><h2>#100harikoding</h2><div id="sekarang"></div></div>
+		<br>
+		<div id="list-activity"></div>
+	</div>
+	<script type="text/javascript">
+	var xmlhttp = new XMLHttpRequest();
+	var url = "log.json";
+
+	xmlhttp.onreadystatechange=function(){
+		if(xmlhttp.readyState == 4 && xmlhttp.status==200 ){
+			var myArr=JSON.parse(xmlhttp.responseText);
+			myFunction(myArr);
+		}
+	}
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+
+	function myFunction(arr){
+		var out="";
+		var i;
+		for (i=0;i<arr.length;i++) {
+			var waktu = new Date(arr[i].time);
+			out+=arr[i].title+"<br><b>"+waktu.toDateString()+"</b><br>"+arr[i].details+"<br><a href='"+arr[i].url+"'>URL</a><br><br>";
+		}
+		var el = document.getElementById("list-activity").innerHTML=out;
+	}
+
+	var d = new Date();
+	document.getElementById("sekarang").innerHTML = d;
+	</script>
+	
+</body>
+</html>
