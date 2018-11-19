@@ -16,12 +16,17 @@
 },{
 	"title":"Todo app",
 	"time":"November 18, 2018 11:13:00",
-	"details":"Make a simple todo with js",
+	"details":"Make a simple todo with js in plnkr.co",
 	"url":""
 },{
 	"title":"Todo app & #100harikoding",
 	"time":"November 19, 2018 11:13:00",
 	"details":"add some feature to previous todo app, add some script to #100harikoding project",
 	"url":""
+},{
+	"title":"Event Delegation",
+	"time":"November 19, 2018 11:13:00",
+	"details":"Learn and implement Event Delegation in todo app",
+	"url":"https://github.com/tgrnx/todone"
 }
 ]
