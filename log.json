@@ -9,14 +9,19 @@
 	"details":"Make a json file and display it, change icons used in homepage to CDN,",
 	"url":"NA"
 },{
-	"title":"Learning about css attribute",
+	"title":"Frecodecamp Course",
 	"time":"November 17, 2018 11:13:00",
-	"details":"",
+	"details":"Learning about css attribute",
 	"url":""
 },{
-	"title":"",
-	"time":"",
-	"details":"",
+	"title":"Todo app",
+	"time":"November 18, 2018 11:13:00",
+	"details":"Make a simple todo with js",
+	"url":""
+},{
+	"title":"Todo app & #100harikoding",
+	"time":"November 19, 2018 11:13:00",
+	"details":"add some feature to previous todo app, add some script to #100harikoding project",
 	"url":""
 }
 ]
