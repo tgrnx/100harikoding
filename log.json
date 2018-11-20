@@ -24,9 +24,9 @@
 	"details":"add some feature to previous todo app, add some script to #100harikoding project",
 	"url":""
 },{
-	"title":"Event Delegation",
+	"title":"Todoapp & #100harikoding",
 	"time":"November 19, 2018 11:13:00",
-	"details":"Learn and implement Event Delegation in todo app",
+	"details":"Learn and implement Event Delegation in todo app, refactoring 100harikoding",
 	"url":"https://github.com/tgrnx/todone"
 }
 ]

@@ -6,39 +6,16 @@
 </head>
 <body>
 	<div class="">
-		<div class=""><h2>#100harikoding</h2><div id="sekarang"></div></div>
+		<div class="">
+			<h2>#100harikoding</h2>
+			<!-- <div id="sekarang"></div> -->
+		</div>
 		<br>
-		<div id="list-activity"></div>
-		<button id="display-activity-button">Display Activity</button>
+		<button onclick="controllr.showActivityList()">Display Activity</button>
+		<ul id="list-activity"></ul>
+		
 	</div>
-	<script type="text/javascript">
-	var xmlhttp = new XMLHttpRequest();
-	var url = "log.json";
-	var out="";
-	xmlhttp.onreadystatechange=function(){
-		if(xmlhttp.readyState == 4 && xmlhttp.status==200 ){
-			var myArr=JSON.parse(xmlhttp.responseText);
-			myFunction(myArr);
-		}
-	}
-	xmlhttp.open("GET",url,true);
-	xmlhttp.send();
-
-	function myFunction(arr){
-		// var out="";
-		var i;
-		for (i=0;i<arr.length;i++) {
-			var waktu = new Date(arr[i].time);
-			out+=arr[i].title+"<br><b>"+waktu.toDateString()+"</b><br>"+arr[i].details+"<br><a href='"+arr[i].url+"'>URL</a><br><br>";
-		}
-		// var el = document.getElementById("list-activity").innerHTML=out;
-	}
-
-	document.getElementById("display-activity-button").addEventListener("click",function(){
-		document.getElementById("list-activity").innerHTML=out;
-	})
-	var d = new Date();
-	document.getElementById("sekarang").innerHTML = d;
+	<script type="text/javascript" src="script.js">
 	</script>
 	
 </body>
